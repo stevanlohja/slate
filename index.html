@@ -201,7 +201,7 @@
       <script src="javascripts/all.js"></script>
   </head>
 
-  <body class="index" data-languages="[&quot;code&quot;]">
+  <body class="index" data-languages="[&quot;shell&quot;]">
     <a href="#" id="nav-button">
       <span>
         NAV
@@ -211,7 +211,7 @@
     <div class="toc-wrapper">
       <img src="images/logo.png" class="logo" alt="Logo" />
         <div class="lang-selector">
-              <a href="#" data-language-name="code">code</a>
+              <a href="#" data-language-name="shell">shell</a>
         </div>
         <div class="search">
           <input type="text" class="search" id="input-search" placeholder="Search">
@@ -220,6 +220,17 @@
       <ul id="toc" class="toc-list-h1">
           <li>
             <a href="#introduction" class="toc-h1 toc-link" data-title="Introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#classic-geth" class="toc-h1 toc-link" data-title="Classic Geth">Classic Geth</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#install" class="toc-h2 toc-link" data-title="Install">Install</a>
+                  </li>
+                  <li>
+                    <a href="#macos" class="toc-h2 toc-link" data-title="MacOS">MacOS</a>
+                  </li>
+              </ul>
           </li>
           <li>
             <a href="#multigeth" class="toc-h1 toc-link" data-title="MultiGeth">MultiGeth</a>
@@ -238,18 +249,81 @@
       <div class="content">
         <h1 id='introduction'>Introduction</h1>
 <p>&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&quot;</p>
+<h1 id='classic-geth'>Classic Geth</h1>
+<p>Go Ethereum, commonly known as Geth or Classic Geth, is a command line interface for running an Ethereum Classic node.</p>
+
+<aside class="notice">
+Ethereum ETH and Ethereum Classic ETC both have a Geth implementation. Classic Geth simply emphasizes that we're using Ethereum Classic's Geth implementation.
+</aside>
+<h2 id='install'>Install</h2>
+<aside class="notice">
+Classic Geth requires _Go Lang._ and a _C-Compiler_.
+</aside>
+<h2 id='macos'>MacOS</h2><h3 id='dependencies'>Dependencies</h3>
+<ul>
+<li>Install <a href="https://brew.sh/">Homebrew</a> package manager.</li>
+</ul>
 
 <blockquote>
-<p>Let&#39;s put <code>Hello World</code> inside a <code>div</code>.</p>
+<p>install homebrew</p>
 </blockquote>
-<pre class="highlight html tab-html"><code><span class="nt">&lt;div&gt;</span>
-  <span class="nt">&lt;h1&gt;</span>Hello World<span class="nt">&lt;/h1&gt;</span>
-<span class="nt">&lt;div&gt;</span>
-</code></pre><h1 id='multigeth'>MultiGeth</h1><h1 id='openrpc'>OpenRPC</h1>
+<pre class="highlight shell tab-shell"><code>/usr/bin/ruby -e <span class="s2">"</span><span class="k">$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install<span class="k">)</span><span class="s2">"</span>
+</code></pre>
+<ul>
+<li><p>Install <a href="https://golang.org/">Go Lang</a>.</p></li>
+<li><p>Install a C-Compiler.</p></li>
+</ul>
+
+<blockquote>
+<p>Install a C-Compiler.</p>
+</blockquote>
+<pre class="highlight shell tab-shell"><code>xcode-select --install
+</code></pre><h3 id='installing-classic-geth'>Installing Classic Geth</h3>
+<p>Install Classic Geth using Homebrew package manager.</p>
+
+<blockquote>
+<p>Install Classic Geth with Homebrew</p>
+</blockquote>
+<pre class="highlight shell tab-shell"><code>brew install ethereumproject/classic/geth
+</code></pre>
+<blockquote>
+<p>Check Geth version
+<code>shell
+geth version
+</code></p>
+</blockquote>
+
+<p>Update Geth (if applicable) </p>
+
+<p>The Ethereum Classic protocol is always being improved and maintained by the love of the Ethereum Classic developer community. Sometimes bugs are discovered, improvements are made, features are added, etc... Upgrade geth to the latest release by running</p>
+<pre class="highlight shell tab-shell"><code>brew upgrade geth
+</code></pre><h1 id='multigeth'>MultiGeth</h1>
+<p>&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&quot;</p>
+
+<p>&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&quot;</p>
+
+<p>&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&quot;</p>
+
+<p>&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&quot;</p>
+
+<p>&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&quot;</p>
+
+<p>&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&quot;</p>
+<h1 id='openrpc'>OpenRPC</h1>
+<p>&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&quot;</p>
+
+<p>&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&quot;</p>
+
+<p>&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&quot;</p>
+
+<p>&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&quot;</p>
+
+<p>&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&quot;</p>
+
       </div>
       <div class="dark-box">
           <div class="lang-selector">
-                <a href="#" data-language-name="code">code</a>
+                <a href="#" data-language-name="shell">shell</a>
           </div>
       </div>
     </div>
